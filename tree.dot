@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="TypeVehicle_Motorcycle Motorcycle over 500cc0cc to 12Motorcycle over 500cccc <= 0.5\ngini = 0.251\nsamples = 100.0%\nvalue = [0.853, 0.147]\nclass = 1", fillcolor="#e9975b"] ;
+1 [label="CasualtyClass_Pedestrian <= 0.5\ngini = 0.232\nsamples = 96.1%\nvalue = [0.866, 0.134]\nclass = 1", fillcolor="#e99458"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="GridRefEast_428965 <= 0.5\ngini = 0.189\nsamples = 81.8%\nvalue = [0.894, 0.106]\nclass = 1", fillcolor="#e89050"] ;
+1 -> 2 ;
+3 [label="gini = 0.185\nsamples = 81.6%\nvalue = [0.897, 0.103]\nclass = 1", fillcolor="#e88f50"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 0.3%\nvalue = [0.0, 1.0]\nclass = 0", fillcolor="#399de5"] ;
+2 -> 4 ;
+5 [label="1stRoadClass_A643 <= 0.5\ngini = 0.414\nsamples = 14.3%\nvalue = [0.707, 0.293]\nclass = 1", fillcolor="#f0b58b"] ;
+1 -> 5 ;
+6 [label="gini = 0.407\nsamples = 14.1%\nvalue = [0.716, 0.284]\nclass = 1", fillcolor="#efb387"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 0.2%\nvalue = [0.0, 1.0]\nclass = 0", fillcolor="#399de5"] ;
+5 -> 7 ;
+8 [label="CasualtyClass_Driver or rider <= 0.5\ngini = 0.499\nsamples = 3.9%\nvalue = [0.523, 0.477]\nclass = 1", fillcolor="#fdf4ed"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="GridRefEast_421728 <= 0.5\ngini = 0.346\nsamples = 0.4%\nvalue = [0.222, 0.778]\nclass = 0", fillcolor="#72b9ec"] ;
+8 -> 9 ;
+10 [label="gini = 0.219\nsamples = 0.4%\nvalue = [0.125, 0.875]\nclass = 0", fillcolor="#55abe9"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 0.0%\nvalue = [1.0, 0.0]\nclass = 1", fillcolor="#e58139"] ;
+9 -> 11 ;
+12 [label="Daytime_5 <= 0.5\ngini = 0.493\nsamples = 3.5%\nvalue = [0.558, 0.442]\nclass = 1", fillcolor="#fae5d6"] ;
+8 -> 12 ;
+13 [label="gini = 0.487\nsamples = 3.4%\nvalue = [0.581, 0.419]\nclass = 1", fillcolor="#f8dcc8"] ;
+12 -> 13 ;
+14 [label="gini = 0.0\nsamples = 0.1%\nvalue = [0.0, 1.0]\nclass = 0", fillcolor="#399de5"] ;
+12 -> 14 ;
+}
